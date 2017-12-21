@@ -31,6 +31,26 @@ public class DisplayFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_display, container, false);
 
 
+        BottomFragment bottomFragment = new BottomFragment();
+        FragmentManager bottommanger =getActivity().getSupportFragmentManager();
+        FragmentTransaction bottomTran = bottommanger.beginTransaction();
+        bottomTran.replace(R.id.bottomcontainer , bottomFragment);
+        bottomTran.commit();
+
+
+
+         TopFragment topFragment = new TopFragment();
+        FragmentManager topmanger =getActivity().getSupportFragmentManager();
+        FragmentTransaction topTran = bottommanger.beginTransaction();
+        bottomTran.replace(R.id.topcontainer , topFragment);
+        topTran.commit();
+
+
+
+
+
+
+
 
         return view;
     }
