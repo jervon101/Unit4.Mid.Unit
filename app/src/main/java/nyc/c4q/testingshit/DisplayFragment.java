@@ -37,21 +37,6 @@ public class DisplayFragment extends Fragment {
         bottomTran.replace(R.id.bottomcontainer , bottomFragment);
         bottomTran.commit();
 
-
-
-         TopFragment topFragment = new TopFragment();
-        FragmentManager topmanger =getActivity().getSupportFragmentManager();
-        FragmentTransaction topTran = bottommanger.beginTransaction();
-        bottomTran.replace(R.id.topcontainer , topFragment);
-        topTran.commit();
-
-
-
-
-
-
-
-
         return view;
     }
 
